@@ -142,15 +142,15 @@
 
 <section class="section">
   <div class="container has-text-centered">
-    <img src="static/images/PrefEval_main.png" alt="PrefEval Performance Comparison" style="width:54%; max-width:800px;">
+    <img src="static/images/prefeval_overview.png" alt="PrefEval Setup Overview" style="width:54%; max-width:800px;">
     <p style="max-width: 800px; margin: 20px auto; line-height: 1.6;">
-              Average performance of multimodal models on twelve VQA tasks. Our <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="PrefEval">PrefEval</span> instruction-tuned mixed-modal foundation model outperforms both open multimodal models (Chameleon, LLaVA-Med-v1.5, and Huatuo) and closed multimodal models (GPT-4o, GPT-4o-mini). This underscores the effectiveness of the <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="PrefEval">PrefEval</span> dataset in training capable multimodal biomedical assistants.
+      <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+      <span class="PrefEval">PrefEval</span> setup overview. Key components from left to right: <b>1) Multi-Session Conversation Setup:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+      <span class="PrefEval">PrefEval</span> evaluates LLMs' ability to follow user preferences in multi-session conversation, challenging LLMs to handle <b>preference inference</b>, <b>long-range retrieval</b>, and <b>context-aware preference following</b> simultaneously. <b>2) Preferences and Queries:</b> User preferences can be expressed through both <b>explicit and implicit forms</b>. Queries are designed such that a non-personalized answer would inadvertently conflict with user preferences, testing the LLM's adherence. <b>3) Tasks and Evaluations:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+      <span class="PrefEval">PrefEval</span> includes <b>generation and classification tasks</b>. Generation tasks are evaluated using an LLM-based evaluator to measure preference following accuracy and analyze error types. Classification tasks enable quicker evaluation through multiple-choice questions. The two tasks' performances are highly correlated.
     </p>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
