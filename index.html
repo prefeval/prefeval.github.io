@@ -182,10 +182,10 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard">Performance on Biomedical VQA Tasks</h2>
+        <h2 class="title is-3" id="leaderboard">SoTA LLMs performance on PrefEval</h2>
         <div class="content">
-          <p class="mt-3">Performance comparison of multimodal models on various biomedical visual question answering datasets.</p>
-
+          <p class="mt-3">Zero-shot performance of LLMs with explicit preferences, averaged across 20 topics. The x-axis represents the dialogue length between the user's stated preference and the final query, measured by both the number of tokens in the prompt and the number of conversation turns. All LLMs exhibit a rapid decline in accuracy as the number of turns increases.</p>
+          <img src="static/images/zero-shot-sota.png" alt="Zero-shot performance of LLMs on PrefEval" class="mt-4">
         </div>
       </div>
     </div>
@@ -195,35 +195,7 @@
 
 
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
-        <div class="column is-four-fifths">
-          <h2 class="title is-3"><img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="PrefEval">PrefEval</span> 7B Generation Examples on Diverse Tasks</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/qualitative_examples/mmout_qual.png" alt="image name" width="90%"/>
-              <p>
-                Sample generations from the PrefEval model on <b>multimodal (interleaved) generation.</b>
-              </p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/qualitative_examples/chat_captioning_generation_qual.png" alt="image name" width="90%"/>
-              <p>
-                Sample generations from the PrefEval model on <b>visual chatting, image captioning, and image generation tasks.</b>
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div>
-  </div>
-</section>
+
 
 
 
