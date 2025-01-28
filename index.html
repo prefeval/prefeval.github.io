@@ -341,19 +341,19 @@
             <div class="box m-5">
                 <div class="content has-text-centered">
                     <img src="static/images/explicit_generation_baselines.png" alt="Performance comparison" width="80%"/>
-                    <p><b>Performance comparison of 5 methods across 6 LLMs with explicit preferences on the generation task. Both Reminder and RAG consistently achieve the highest accuracy across models.</b></p>
+                    <p><b>Performance comparison of 5 methods across 6 LLMs with explicit preferences on the generation task. Both Reminder and RAG consistently achieve the highest accuracy across models. Notably, Reminder outperforms more complex techniques such as Self-Critic and CoT.</b></p>
+                </div>
+            </div>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/comparison_preference_forms.png" alt="Preference forms comparison" width="60%"/>
+                    <p><b>Comparison of 3 preference forms for 6 LLMs on the generation task, across varying lengths between the stated preference and query. Note that the user preference is stated in the first turn. Results show that implicit preferences are more challenging to infer than explicit preferences.</b></p>
                 </div>
             </div>
             <div class="box m-5">
                 <div class="content has-text-centered">
                     <img src="static/images/classification_task.png" alt="Classification task" width="55%"/>
-                    <p><b>Performance of classification task across models and methods on the explicit preferences dataset across various input lengths.</b></p>
-                </div>
-            </div>
-            <div class="box m-5">
-                <div class="content has-text-centered">
-                    <img src="static/images/sft_results.png" alt="SFT results" width="45%"/>
-                    <p><b>SFT results on PREFEVAL: Mistral-7B model exhibits superior preference following accuracy after fine-tuning.</b></p>
+                    <p><b>Performance of classification task acros models and methods on the explicit preferences dataset across various input lengths between the user’s preference and the final query. Results are averaged over 20 topics.</b></p>
                 </div>
             </div>
         </div>
@@ -361,14 +361,8 @@
 
     <!-- Section 2: Preference Analysis -->
     <section class="carousel-section">
-        <h2 class="title is-2 has-text-centered section-title">Preference Analysis</h2>
+        <h2 class="title is-2 has-text-centered section-title">Error Analysis</h2>
         <div class="results-carousel">
-            <div class="box m-5">
-                <div class="content has-text-centered">
-                    <img src="static/images/comparison_preference_forms.png" alt="Preference forms comparison" width="60%"/>
-                    <p><b>Comparison of 3 preference forms for 6 LLMs on the generation task, showing implicit preferences are more challenging to infer.</b></p>
-                </div>
-            </div>
             <div class="box m-5">
                 <div class="content has-text-centered">
                     <img src="static/images/error_types.png" alt="Error types" width="35%"/>
@@ -396,6 +390,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Section 4: SFT on prefeval -->
+    <section class="carousel-section">
+        <h2 class="title is-2 has-text-centered section-title">Finetuning on PrefEval</h2>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/sft_results.png" alt="SFT results" width="45%"/>
+                    <p><b>SFT results on PREFEVAL: Mistral-7B model exhibits superior preference following accuracy after fine-tuning.</b></p>
+                </div>
+            </div>
+    </section>
+
 
 
 <section class="section" id="BibTeX">
