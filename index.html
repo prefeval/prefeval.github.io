@@ -179,14 +179,19 @@
 
 <!-- Results -->
 <section class="section">
-  <div class="container">
+  <div class="container" style="margin-bottom: 2vh;">
     <div class="columns is-centered">
+      
       <div class="column is-full has-text-centered content">
         <h2 class="title is-3" id="leaderboard">SoTA LLMs performance on PrefEval</h2>
         <div class="content">
           <p class="mt-3">Zero-shot performance of LLMs with explicit preferences, averaged across 20 topics. The x-axis represents the dialogue length between the user's stated preference and the final query, measured by both the number of tokens in the prompt and the number of conversation turns. All LLMs exhibit a rapid decline in accuracy as the number of turns increases.</p>
           <div class="image-container" style="max-width: 800px; margin: 0 auto;">
             <img src="static/images/zero-shot-sota.png" alt="Zero-shot performance of LLMs on PrefEval" class="mt-4" style="width: 50%; height: auto;">
+          </div>
+          <p class="mt-3">Comparison of preference-following accuracy across SoTA LLMs evaluated at two context lengths with two methods: Zero-shot and Reminder (best prompting method), evaluated at two context lengths, on the travel restaurant topic and on generation task</p>
+          <div class="image-container" style="max-width: 800px; margin: 0 auto;">
+            <img src="static/images/more-sota-llms.png" alt="Zero-shot performance of LLMs on PrefEval" class="mt-4" style="width: 50%; height: auto;">
           </div>
         </div>
       </div>
