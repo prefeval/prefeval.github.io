@@ -210,34 +210,79 @@
 
 
 
+<!-- Dataset Section -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-  <h1 class="title is-1 mathvista">
-    <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mathvista" style="vertical-align: middle">PrefEval Dataset</span>
-  </h1>
+    <h1 class="title is-1">
+      <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+      <span style="vertical-align: middle">PrefEval Dataset</span>
+    </h1>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Distribution of domains and topics within PrefEval</h2>
-          <div class="content has-text-justified">
-            <img src="static/images/topics_distribution.png" class="figure" alt="Distribution of domains and topics within PrefEval">
+    <!-- Dataset Overview -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <div class="columns is-multiline">
+            <!-- Key Statistics -->
+            <div class="column is-6">
+              <div class="box has-text-centered">
+                <h3 class="title is-4">Dataset Scale</h3>
+                <p class="subtitle is-5">1,000 unique preference-query pairs</p>
+                <p>3 distinct preference forms per pair</p>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="box has-text-centered">
+                <h3 class="title is-4">Context Length</h3>
+                <p class="subtitle is-5">Up to 100k tokens</p>
+                <p>Multi-session conversational context</p>
+              </div>
+            </div>
+            
+            <!-- Preference Forms -->
+            <div class="column is-12">
+              <div class="box">
+                <h3 class="title is-4 has-text-centered">Preference Forms</h3>
+                <div class="columns is-multiline">
+                  <div class="column is-4">
+                    <h4 class="title is-5">Explicit Preference</h4>
+                    <p>Direct single-turn expression of user preferences</p>
+                  </div>
+                  <div class="column is-4">
+                    <h4 class="title is-5">Implicit Choice-Based</h4>
+                    <p>Two-turn dialogue with preference revealed through choices</p>
+                  </div>
+                  <div class="column is-4">
+                    <h4 class="title is-5">Implicit Persona-Driven</h4>
+                    <p>4-8 turn dialogue with subtle preference revelation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Topic Distribution -->
+        <h2 class="title is-3 has-text-centered">Distribution of Domains and Topics</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/topics_distribution.png" class="figure" alt="Distribution of domains and topics within PrefEval">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+
+
+<!-- <section class="section">
   <div class="container">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered"> -->
       <!-- <div class="column is-full-width has-text-centered"> -->
-        <div class="column is-four-fifths">
+        <!-- <div class="column is-four-fifths">
           <h2 class="title is-3"><img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
               <span class="PrefEval">PrefEval</span> Dataset Statistics</h2>
         <div id="results-carousel" class="carousel results-carousel">
@@ -265,7 +310,7 @@
         </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
