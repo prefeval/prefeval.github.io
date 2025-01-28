@@ -325,62 +325,77 @@
   </div>
 </section> -->
 
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-  <h1 class="title is-1 mathvista">
-    <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mathvista" style="vertical-align: middle">Experiment Results</span>
-  </h1>
-  </div>
-</section>
+    <section class="hero is-light is-small">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1 mathvista">
+                <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+                <span class="mathvista" style="vertical-align: middle">Experiment Results</span>
+            </h1>
+        </div>
+    </section>
 
-<div id="results-carousel" class="carousel results-carousel">
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/explicit_generation_baselines.png" alt="image name" width="80%"/>
-      <p>
-        <b>Performance comparison of 5 methods across 6 LLMs with explicit preferences on the generation task. Both Reminder and RAG consistently achieve the highest accuracy across models. Notably, Reminder outperforms more complex techniques such as Self-Critic and CoT.
-      </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/comparison_preference_forms.png" alt="image name" width="60%"/>
-      <p> <b> Comparison of 3 preference forms for 6 LLMs on the generation task, across varying lengths between the stated preference and query. Note that the user preference is stated in the first turn. Results show that implicit preferences are more challenging to infer than explicit preferences. </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/classification_task.png" alt="image name" width="55%"/>
-      <p> <b>Performance of classification task acros models and methods on the explicit preferences dataset across various input lengths between the user’s preference and the final query. Results are averaged over 20 topics.  </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/error_types.png" alt="image name" width="35%"/>
-      <p> <b>Distribution of 4 disjoint error types across 2 LLMs and 5 methods in the generation task with explicit preferences, where the gap between the preference and the query is 10 turns. Prompting methods introduce more hallucination and unhelpful errors, as LLMs either fabricate user preferences or refuse to respond due to failures in recalling the preferences, which is undesirable for personalized conversational chatbots.  </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/conflicting_prefs.png" alt="image name" width="35%"/>
-      <p> <b>Effect of adding conflicting versus non-conflicting preferences on adherence. The red bar indicates the performance when only the original preference is present. Results are averaged over five topics using a fixed 100-turn conversation. </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/multiple_prefs.png" alt="image name" width="35%"/>
-      <p> <b> Introducing multiple preferences throughout a conversation improves adherence to the initial preference. Results are using Claude 3 Sonnet with Reminder prompting. </p>
-    </div>
-  </div>
-  <div class="box m-5">
-    <div class="content has-text-centered">
-      <img src="static/images/sft_results.png" alt="image name" width="45%"/>
-      <p> <b>SFT results on PREFEVAL: After fine-tuning, the Mistral-7B model exhibits superior preference following accuracy compared to other baseline models. It also shows enhanced length generalization when trained with longer context interleavings, demonstrating its ability to handle extended conversational turns more effectively. </p>
-    </div>
-  </div>
+    <!-- Section 1: Main Performance Comparisons -->
+    <section class="carousel-section">
+        <h2 class="title is-2 has-text-centered section-title">Main Performance Comparisons</h2>
+        <div class="results-carousel">
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/explicit_generation_baselines.png" alt="Performance comparison" width="80%"/>
+                    <p><b>Performance comparison of 5 methods across 6 LLMs with explicit preferences on the generation task. Both Reminder and RAG consistently achieve the highest accuracy across models.</b></p>
+                </div>
+            </div>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/classification_task.png" alt="Classification task" width="55%"/>
+                    <p><b>Performance of classification task across models and methods on the explicit preferences dataset across various input lengths.</b></p>
+                </div>
+            </div>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/sft_results.png" alt="SFT results" width="45%"/>
+                    <p><b>SFT results on PREFEVAL: Mistral-7B model exhibits superior preference following accuracy after fine-tuning.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- Section 2: Preference Analysis -->
+    <section class="carousel-section">
+        <h2 class="title is-2 has-text-centered section-title">Preference Analysis</h2>
+        <div class="results-carousel">
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/comparison_preference_forms.png" alt="Preference forms comparison" width="60%"/>
+                    <p><b>Comparison of 3 preference forms for 6 LLMs on the generation task, showing implicit preferences are more challenging to infer.</b></p>
+                </div>
+            </div>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/error_types.png" alt="Error types" width="35%"/>
+                    <p><b>Distribution of 4 disjoint error types across 2 LLMs and 5 methods in the generation task with explicit preferences.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Dynamic Preferences -->
+    <section class="carousel-section">
+        <h2 class="title is-2 has-text-centered section-title">Dynamic Preferences</h2>
+        <div class="results-carousel">
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/conflicting_prefs.png" alt="Conflicting preferences" width="35%"/>
+                    <p><b>Effect of adding conflicting versus non-conflicting preferences on adherence, with red bar indicating performance with original preference only.</b></p>
+                </div>
+            </div>
+            <div class="box m-5">
+                <div class="content has-text-centered">
+                    <img src="static/images/multiple_prefs.png" alt="Multiple preferences" width="35%"/>
+                    <p><b>Introducing multiple preferences throughout a conversation improves adherence to the initial preference using Claude 3 Sonnet with Reminder prompting.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <section class="section" id="BibTeX">
