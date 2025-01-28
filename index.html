@@ -203,29 +203,14 @@
 </section>
 
 
-
-
-
-
-
-
-
 <!-- Dataset Section -->
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1">
-      <img src="static/images/prefevallogo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-      <span style="vertical-align: middle">PrefEval Dataset</span>
-    </h1>
-  </div>
-</section>
-
 <section class="section">
   <div class="container">
-    <!-- Dataset Overview -->
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content">
+          <h2 class="title is-3 has-text-centered">Dataset Overview</h2>
+          
           <div class="columns is-multiline">
             <!-- Key Statistics -->
             <div class="column is-6">
@@ -242,40 +227,58 @@
                 <p>Multi-session conversational context</p>
               </div>
             </div>
-            
-            <!-- Preference Forms -->
+
+            <!-- Preference Forms and Task Types -->
             <div class="column is-12">
-              <div class="box">
-                <h3 class="title is-4 has-text-centered">Preference Forms</h3>
-                <div class="columns is-multiline">
-                  <div class="column is-4">
-                    <h4 class="title is-5">Explicit Preference</h4>
-                    <p>Direct single-turn expression of user preferences</p>
+              <div class="columns">
+                <!-- Preference Forms -->
+                <div class="column is-8">
+                  <div class="box">
+                    <h3 class="title is-4 has-text-centered">Preference Forms</h3>
+                    <div class="columns is-multiline">
+                      <div class="column is-4">
+                        <h4 class="title is-5">Explicit Preference</h4>
+                        <p>Direct single-turn expression of user preferences</p>
+                      </div>
+                      <div class="column is-4">
+                        <h4 class="title is-5">Implicit Choice-Based</h4>
+                        <p>Two-turn dialogue with preference revealed through choices</p>
+                      </div>
+                      <div class="column is-4">
+                        <h4 class="title is-5">Implicit Persona-Driven</h4>
+                        <p>4-8 turn dialogue with subtle preference revelation</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="column is-4">
-                    <h4 class="title is-5">Implicit Choice-Based</h4>
-                    <p>Two-turn dialogue with preference revealed through choices</p>
-                  </div>
-                  <div class="column is-4">
-                    <h4 class="title is-5">Implicit Persona-Driven</h4>
-                    <p>4-8 turn dialogue with subtle preference revelation</p>
+                </div>
+
+                <!-- Task Types -->
+                <div class="column is-4">
+                  <div class="box">
+                    <h3 class="title is-4 has-text-centered">Task Types</h3>
+                    <div>
+                      <h4 class="title is-5">Generation Task</h4>
+                      <p>LLM-based evaluators for generating responses</p>
+                      
+                      <h4 class="title is-5">Classification Task</h4>
+                      <p>MCQ accuracy assessment with four options aligned to user preferences</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Topic Distribution -->
-        <h2 class="title is-3 has-text-centered">Distribution of Domains and Topics</h2>
-        <div class="content has-text-justified">
-          <img src="static/images/topics_distribution.png" class="figure" alt="Distribution of domains and topics within PrefEval">
+          <!-- Topic Distribution -->
+          <h2 class="title is-3 has-text-centered">Distribution of Domains and Topics</h2>
+          <div class="content has-text-justified">
+            <img src="static/images/topics_distribution.png" class="figure" alt="Distribution of domains and topics within PrefEval">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 <!-- <section class="section">
