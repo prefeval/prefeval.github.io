@@ -324,35 +324,53 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/perf_image_cap_gen_fig7.png" alt="image name" width="90%"/>
-              <p>
-                <b>Performance on the image captioning and image generation tasks.</b> We find that PrefEval model consistency outperforms the base Chameleon mixed-modal model across diverse biomedical domains.
-              </p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/multimodal_gen_fig8.png" alt="image name" width="40%"/>
-              <p> <b>Performance on the multimodal generation task.</b> Comparison between the performance of the PrefEval and Chameleon mixed-modal model on the multimodal generation task. (a) We use LLM score to assess the quality of the generated data against the reference answer. (b) We use the image-image similarity score using BioMedCLIPScore to compare the generated image and reference image. We find that PrefEval finetuning improves the multimodal content generation capabilities for the biomedical domain.
-              </p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/visual_chabot_compare_fig9.png" alt="image name" width="75%"/>
-              <p> <b>Performance on the visual chat task. </b> Comparison between the visual chat performance of PrefEval model and several baselines. We find that the chatting capabilities of our model is quite competitive, suggesting its ability to answer novel queries about biomedical images. </p>
-            </div>
-          </div>
-      </div>
+<div id="results-carousel" class="carousel results-carousel">
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/explicit_generation_baselines.png" alt="image name" width="90%"/>
+      <p>
+        <b>Distribution of skills (left) and data sources (right) in PrefEval.</b> We highlight that PrefEval consists diverse skills for mixed-modal instruction tuning (left). In particular, we source the data from biomedical sources that cover several domains (e.g., radiology) and knowledge bases (e.g., research papers, YouTube).
+      </p>
     </div>
   </div>
-</section>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/comparison_preference_forms.png" alt="image name" width="40%"/>
+      <p> <b>Task-specific data sources in PrefEval.</b> We present the data-sources used to curate task-specific data in the PrefEval collection. We abbreviate PubMedVision as PMV, visual question answering as VQA, Image captioning and generation tasks as Image Cap & Gen.  </p>
+    </div>
+  </div>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/classification_task.png" alt="image name" width="75%"/>
+      <p> <b>Additional information about diverse biomedical dataset sources.</b> We highlight that PrefEval consists data across several biomedical domains and knowledge bases.  </p>
+    </div>
+  </div>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/error_types.png" alt="image name" width="75%"/>
+      <p> <b>Additional information about diverse biomedical dataset sources.</b> We highlight that PrefEval consists data across several biomedical domains and knowledge bases.  </p>
+    </div>
+  </div>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/conflicting_prefs.png" alt="image name" width="75%"/>
+      <p> <b>Additional information about diverse biomedical dataset sources.</b> We highlight that PrefEval consists data across several biomedical domains and knowledge bases.  </p>
+    </div>
+  </div>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/multiple_prefs.png" alt="image name" width="75%"/>
+      <p> <b>Additional information about diverse biomedical dataset sources.</b> We highlight that PrefEval consists data across several biomedical domains and knowledge bases.  </p>
+    </div>
+  </div>
+  <div class="box m-5">
+    <div class="content has-text-centered">
+      <img src="static/images/sft_results.png" alt="image name" width="75%"/>
+      <p> <b>Additional information about diverse biomedical dataset sources.</b> We highlight that PrefEval consists data across several biomedical domains and knowledge bases.  </p>
+    </div>
+  </div>
+
+</div>
 
 
 <section class="section" id="BibTeX">
