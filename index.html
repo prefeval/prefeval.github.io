@@ -158,13 +158,15 @@
                   <span class="has-text-weight-semibold">User:</span> "Can you recommend places to visit in New Orleans?"
                 </p>
                 <p>
-                  <span class="has-text-weight-semibold">Expected Response:</span> A personalized recommendation that avoids jazz-related attractions, despite them being popular tourist destinations in New Orleans.
+                  <span class="has-text-weight-semibold">Expected Personalized Response:</span> A personalized recommendation that avoids jazz-related attractions, despite them being popular tourist destinations in New Orleans.
                 </p>
               </div>
             </div>
           </div>
           <p class="mt-4">
-            This example illustrates a key challenge in personalized AI assistants: they need to proactively infer, remember, and apply user preferences across conversations. While suggesting jazz venues in New Orleans would be standard for general tourist recommendations, a truly personalized assistant should avoid such suggestions based on the user's previously stated preference.
+            This example shows a key challenge in personalized AI assistants: they need to proactively infer, remember, and apply user preferences across conversations. While suggesting jazz venues in New Orleans would be standard for general tourist recommendations, a truly personalized assistant should avoid such suggestions based on the user's previously stated preference. 
+            
+            <b>Surprisingly, we find that even current SoTA LLMs like GPT-4o, o1-preview, Claude 3.5 Sonnet, and Gemini 1.5 Pro fail to maintain such preference awareness in conversations</b> even as short as 10 turns (~3k tokens).
           </p>
         </div>
       </div>
@@ -172,21 +174,6 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container has-text-centered">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <img src="static/images/prefeval_overview.png" alt="PrefEval Setup Overview" style="width:60%; max-width:820px;">
-        <p style="margin: 20px auto; line-height: 1.6;">
-          <img src="static/images/prefevallogo.png" style="width:1.4em;vertical-align: middle" alt="Logo"/>
-          <span class="PrefEval">PrefEval</span> setup overview. Key components from left to right: <b>1) Multi-Session Conversation Setup:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-          <span class="PrefEval">PrefEval</span> evaluates LLMs' ability to follow user preferences in multi-session conversation, challenging LLMs to handle <b>preference inference</b>, <b>long-range retrieval</b>, and <b>context-aware preference following</b> simultaneously. <b>2) Preferences and Queries:</b> User preferences can be expressed through both <b>explicit and implicit forms</b>. Queries are designed such that a non-personalized answer would inadvertently conflict with user preferences, testing the LLM's adherence. <b>3) Tasks and Evaluations:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-          <span class="PrefEval">PrefEval</span> includes <b>generation and classification tasks</b>. Generation tasks are evaluated using an LLM-based evaluator to measure preference following accuracy and analyze error types. Classification tasks enable quicker evaluation through multiple-choice questions. The two tasks' performances are highly correlated.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
@@ -211,6 +198,22 @@
 </div>
 </section>
 
+
+<section class="section">
+  <div class="container has-text-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <img src="static/images/prefeval_overview.png" alt="PrefEval Setup Overview" style="width:60%; max-width:820px;">
+        <p style="margin: 20px auto; line-height: 1.6;">
+          <img src="static/images/prefevallogo.png" style="width:1.4em;vertical-align: middle" alt="Logo"/>
+          <span class="PrefEval">PrefEval</span> setup overview. Key components from left to right: <b>1) Multi-Session Conversation Setup:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="PrefEval">PrefEval</span> evaluates LLMs' ability to follow user preferences in multi-session conversation, challenging LLMs to handle <b>preference inference</b>, <b>long-range retrieval</b>, and <b>context-aware preference following</b> simultaneously. <b>2) Preferences and Queries:</b> User preferences can be expressed through both <b>explicit and implicit forms</b>. Queries are designed such that a non-personalized answer would inadvertently conflict with user preferences, testing the LLM's adherence. <b>3) Tasks and Evaluations:</b> <img src="static/images/prefevallogo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="PrefEval">PrefEval</span> includes <b>generation and classification tasks</b>. Generation tasks are evaluated using an LLM-based evaluator to measure preference following accuracy and analyze error types. Classification tasks enable quicker evaluation through multiple-choice questions. The two tasks' performances are highly correlated.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- For the SoTA LLMs performance section -->
 <section class="section">
